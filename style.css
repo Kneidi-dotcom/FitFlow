@@ -1,0 +1,236 @@
+/* Grundlegendes Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    flex: 1;
+}
+
+.logo img {
+    max-width: 120px;
+    align-items: last baseline;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    padding: 20px 0;
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+/* Hero Section */
+.hero {
+    background-color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.hero p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #666;
+}
+
+.cta-button {
+    background-color: #6a11cb;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.cta-button:hover {
+    background-color: #5a0fbf;
+}
+
+/* Features Section */
+.features {
+    background-color: #f7f7f7;
+    padding: 60px 0;
+}
+
+.features h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    text-align: center;
+    flex-basis: 30%;
+    margin-bottom: 20px;
+}
+
+.feature-item img {
+    max-width: 100px;
+    margin-bottom: 15px;
+}
+
+.feature-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #ffffff;
+    padding: 60px 0;
+}
+
+.testimonials h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.testimonial-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.testimonial-item {
+    flex-basis: 30%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.testimonial-item p {
+    color: #666;
+}
+
+/* Call-to-Action Section */
+.cta {
+    background-color: #6a11cb;
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.cta h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta .cta-button {
+    background-color: white;
+    color: #6a11cb;
+    padding: 15px 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.cta .cta-button:hover {
+    background-color: #dcdcdc;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer p {
+    color: white;
+    font-size: 1em;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .feature-grid, .testimonial-grid {
+        flex-direction: column;
+    }
+
+    .hero h2, .features h2, .testimonials h2, .cta h2 {
+        font-size: 1.8em;
+    }
+
+    .feature-item, .testimonial-item {
+        flex-basis: 100%;
+    }
+    
+}
