@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FitFlow - Registriere dich jetzt">
+    <title>FitFlow - Registrieren</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="script.ts" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>
+                <div class="logo">
+                    <img src="images/Logo.png" alt="FitFlow Logo" />
+                </div>
+                FitFlow
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="about.html">Über uns</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Registriere dich und starte deine Fitness-Reise!</h2>
+            <form action="/api/register" method="POST" class="registration-form">
+                <div class="form-group">
+                    <label for="username">Benutzername:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="birthdate">Geburtsdatum:</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-Mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Passwort:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="experience">Erfahrungslevel:</label>
+                    <select id="experience" name="experience" required>
+                        <option value="">Bitte auswählen...</option>
+                        <option value="anfänger">Anfänger</option>
+                        <option value="fortgeschritten">Fortgeschritten</option>
+                        <option value="experte">Experte</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="size">Größe (in cm):</label>
+                    <input type="number" id="size" name="size" required>
+                </div>
+                <div class="form-group">
+                    <label for="bodyweight">Körpergewicht (in kg):</label>
+                    <input type="number" id="bodyweight" name="bodyweight" required>
+                </div>
+                <button type="submit" class="cta-button">Jetzt registrieren</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 FitFlow. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+</body>
+</html>

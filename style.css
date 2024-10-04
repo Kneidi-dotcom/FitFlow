@@ -215,6 +215,100 @@ footer p {
     font-size: 1em;
 }
 
+/* Registration Form Section */
+.registration-form {
+    background: #f7f7f7;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus, .form-group select:focus {
+    border-color: #6a11cb;
+}
+
+/* Team Section */
+.team-grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 600px;
+}
+
+.team-member img {
+    border-radius: 50%;
+    max-width: 120px;
+}
+
+.team-member h3 {
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    margin: 0;
+}
+
+/* Contact Section */
+.contact-grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.contact-member {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 600px;
+}
+
+.contact-member img {
+    border-radius: 50%;
+    max-width: 120px;
+}
+
+.contact-member h3 {
+    margin-bottom: 10px;
+}
+
+.contact-member p {
+    margin: 0;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     nav ul {
@@ -232,5 +326,12 @@ footer p {
     .feature-item, .testimonial-item {
         flex-basis: 100%;
     }
-    
+
+    .registration-form {
+        padding: 20px;
+    }
+
+    .team-grid, .contact-grid {
+        flex-direction: column;
+    }
 }
