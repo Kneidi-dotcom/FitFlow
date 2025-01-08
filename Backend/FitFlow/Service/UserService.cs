@@ -16,5 +16,19 @@ namespace FitFlow.Service
         {
             return _context.Users.ToList();
         }
+
+        public UserDTO CreateUser(UserDTO userDto)
+        {
+            _context.Users.Add(userDto);
+            _context.SaveChanges();
+            return userDto;
+        }
+
+        public List<UserTrainingPlanDTO> GetTrainingPlansForUser(int userId)
+        {
+            return _context.UserTrainingPlans
+                .Where(tp => tp.UserId == userId)
+                .ToList();
+        }
     }
 }

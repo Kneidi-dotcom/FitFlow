@@ -20,5 +20,18 @@ namespace FitFlow.Controllers
         {
             return Ok(userService.GetAllUsers());
         }
+
+        [HttpPost]
+        public ActionResult<UserDTO> CreateUser([FromBody] UserDTO userDto)
+        {
+            var createdUser = userService.CreateUser(userDto);
+            return CreatedAtAction(nameof(GetUsers), new { id = createdUser.user_id }, createdUser);
+        }
+
+        [HttpGet("{userId}/TrainingPlans")]
+        public ActionResult<List<UserTrainingPlanDTO>> GetTrainingPlansForUser(int userId)
+        {
+            return Ok(userService.GetTrainingPlansForUser(userId));
+        }
     }
 }
