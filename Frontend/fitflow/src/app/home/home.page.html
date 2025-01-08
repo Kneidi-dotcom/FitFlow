@@ -1,0 +1,80 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title slot="start">
+      <img src="assets/images/LOGO.png" style="width: 80px; height: 80px">
+    </ion-title>
+    <ion-title>
+      FitFlow
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="login()"> Login</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">FitFlow</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Dein individueller Trainingsplan – maßgeschneidert für dich!</h2>
+      <p>Die Fitness-App FitFlow bietet dir personalisierte Trainingspläne, die genau auf dein Fitnesslevel und deine Bedürfnisse abgestimmt sind. Egal, ob du Anfänger, Fortgeschrittener oder Experte bist, bei uns findest du das perfekte Training.</p>
+      <button class="cta-button" (click)="register()">Starte jetzt deine Fitness-Reise!</button>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container">
+      <h2>Warum FitFlow?</h2>
+      <div class="feature-grid">
+        <div class="feature-item">
+          <img src="assets/images/custom_plan.png" alt="Individuelle Pläne" />
+          <h3>Individuelle Pläne</h3>
+          <p>Wir erstellen personalisierte Trainingspläne, die genau auf dich und dein Fitnesslevel abgestimmt sind.</p>
+        </div>
+        <div class="feature-item">
+          <img src="assets/images/progress_tracking.png" alt="Fortschrittsverfolgung" />
+          <h3>Fortschrittsverfolgung</h3>
+          <p>Verfolge deine Fitnessziele in Echtzeit und analysiere deine Erfolge direkt in der App.</p>
+        </div>
+        <div class="feature-item">
+          <img src="assets/images/custom_workouts.png" alt="Anpassbare Workouts" />
+          <h3>Anpassbare Workouts</h3>
+          <p>Passe deine Workouts jederzeit an deine Bedürfnisse und Vorlieben an, für maximale Flexibilität.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="container">
+      <h2>Was unsere Nutzer sagen</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial-item">
+          <p>"FitFlow hat mein Training auf ein neues Level gehoben! Die angepassten Pläne und die Fortschrittsverfolgung sind unschlagbar." – Valentin D.</p>
+        </div>
+        <div class="testimonial-item">
+          <p>"Ich liebe es, wie einfach ich meine Workouts anpassen kann. FitFlow gibt mir die Kontrolle über mein Training." – Stefan P.</p>
+        </div>
+        <div class="testimonial-item">
+          <p>"Durch FitFlow habe ich endlich ein Training gefunden, das zu mir passt. Ich sehe echte Fortschritte!" – Philipp K.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+
+    <div class="container">
+      <p> Impressum </p>
+      <p>&copy; 2024 FitFlow. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+
+</ion-content>

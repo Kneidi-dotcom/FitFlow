@@ -1,0 +1,7 @@
+{
+  "name": "fitflow",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
