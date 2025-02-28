@@ -30,6 +30,10 @@ export class RegistrationPage implements OnInit {
     this.router.navigate(['/login']);
   }
 
+  back(){
+    this.router.navigate(['/home']);
+  }
+
   onSubmit(): void {
 
     if (this.registrationForm.valid) {

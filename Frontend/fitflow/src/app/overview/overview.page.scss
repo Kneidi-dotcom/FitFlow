@@ -1,0 +1,254 @@
+/* Grundlegendes Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logoutButton{
+  font-size: 30px;
+  background-color: #1e1e1e;
+  margin-right: 50px;
+}
+
+.profileButton{
+  margin-right: 20px;
+}
+
+ion-button{
+  font-size: 20px;
+}
+
+button{
+  font-size: 30px;
+  background-color: #1e1e1e;
+}
+
+h2{
+  color: black;
+}
+
+h3{
+  color: black;
+}
+
+.container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.progress-section, .workouts-section, .recent-workouts-section, .options-section {
+  margin-bottom: 30px;
+}
+
+.progress-bar {
+  background: #f0f0f0;
+  border-radius: 12px;
+  height: 20px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.progress {
+  background: linear-gradient(90deg, #4caf50, #81c784);
+  height: 100%;
+}
+
+.workout-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.workout-card, .progress-card, .options-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+ion-card{
+  background: darkgray;
+}
+
+ion-card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: black;
+}
+
+ion-card-subtitle {
+  font-size: 0.9rem;
+  color: #888;
+  color: black;
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  padding: 16px;
+}
+
+.progress-bar {
+  background: #e0e0e0;
+  border-radius: 8px;
+  height: 16px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.progress {
+  background: #3880ff;
+  height: 100%;
+}
+
+.workout-list ion-card {
+  margin-bottom: 16px;
+}
+
+.recent-workouts-section {
+    flex-basis: 30%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.options-section {
+  margin-top: 16px;
+}
+
+.secondToolbar button {
+  font-size: 20px;
+  background-color: #003366;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  // Schatten für Tiefe
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  // Hover-Effekt
+  &:hover {
+    background-color: #0055a5; // Hellerer Blauton
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px); // Leichter "Hover-Lift"
+  }
+
+  // Aktiver Zustand
+  &:active {
+    background-color: #002244; // Dunklerer Blauton
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transform: translateY(1px); // Leichter "Pressed-Effekt"
+  }
+}
+
+ion-button{
+  font-size: 20px;
+}
+
+ion-title{
+  font-size: 40px;
+  margin-left: 30px;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #333;
+}
+
+/* Container */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  flex: 1;
+}
+
+.logo img {
+  max-width: 120px;
+  align-items: last baseline;
+}
+
+
+/* Hero Section */
+.hero {
+  background-color: white;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.hero p {
+  font-size: 1.2em;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #666;
+}
+
+/* Footer */
+footer {
+  padding: 20px 0;
+  text-align: center;
+  margin-top: auto;
+}
+
+footer p {
+  color: white;
+  font-size: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

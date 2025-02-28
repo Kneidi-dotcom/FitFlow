@@ -22,12 +22,38 @@ h3{
   color: black;
 }
 
-ion-button{
-  font-size: 20px;
-}
+
 
 ion-title{
   font-size: 40px;
+}
+
+button {
+  font-size: 25px;
+  background-color: #003366;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  // Schatten für Tiefe
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  // Hover-Effekt
+  &:hover {
+    background-color: #0055a5; // Hellerer Blauton
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px); // Leichter "Hover-Lift"
+  }
+
+  // Aktiver Zustand
+  &:active {
+    background-color: #002244; // Dunklerer Blauton
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transform: translateY(1px); // Leichter "Pressed-Effekt"
+  }
 }
 
 html, body {

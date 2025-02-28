@@ -1,0 +1,62 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title slot="start">
+      <img src="assets/images/LOGO.png" style="width: 80px; height: 80px">
+    </ion-title>
+    <ion-title>FitFlow</ion-title>
+    <button (click)="logout()"  class="logoutButton" slot="end">Logout</button>
+    <button (click)="profile()" class="profileButton" slot="end">‍️🙍‍♂️</button>
+  </ion-toolbar>
+  <ion-toolbar class="secondToolbar">
+    <button (click)="workoutPlans()">Trainingspläne</button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">FitFlow</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Willkommen zurück!</h2>
+      <p>Hier findest du eine Übersicht über deine Fitness-Aktivitäten.</p>
+
+      <!-- Letzte Workouts -->
+      <div class="recent-workouts-section">
+        <h3>Letzte Workouts</h3>
+        <div class="workout-list">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Workout X</ion-card-title>
+              <ion-card-subtitle>23. Januar 2025</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <p>Kurzbeschreibung des Workouts.</p>
+            </ion-card-content>
+          </ion-card>
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Workout Y</ion-card-title>
+              <ion-card-subtitle>22. Januar 2025</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <p>Kurzbeschreibung des Workouts.</p>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <footer>
+    <div class="container">
+      <p> Impressum </p>
+      <p>&copy; 2024 FitFlow. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+</ion-content>

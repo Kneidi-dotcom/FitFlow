@@ -19,6 +19,18 @@ const routes: Routes = [
     path: 'registration',
     loadChildren: () => import('./registration/registration.module').then( m => m.RegistrationPageModule)
   },
+  {
+    path: 'overview',
+    loadChildren: () => import('./overview/overview.module').then( m => m.OverviewPageModule)
+  },
+  {
+    path: 'workoutplans',
+    loadChildren: () => import('./workoutplans/workoutplans.module').then( m => m.WorkoutplansPageModule)
+  },
+  {
+    path: 'profile',
+    loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
+  },
 ];
 
 @NgModule({

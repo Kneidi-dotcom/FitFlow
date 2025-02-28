@@ -14,4 +14,8 @@ export class UserService {
   registerUser(userData: any): Observable<any> {
     return this.http.post(this.apiUrl, userData); // JSON wird automatisch erstellt
   }
+
+  loginUser(){
+
+  }
 }

@@ -4,9 +4,7 @@
       <img src="assets/images/LOGO.png" style="width: 80px; height: 80px">
     </ion-title>
     <ion-title>Anmeldung</ion-title>
-    <ion-button slot="end" href=".">
-      Zurück
-    </ion-button>
+    <button slot="end" (click)="back()">Zurück</button>
   </ion-toolbar>
 </ion-header>
 
@@ -19,7 +17,7 @@
 
   <section class="hero">
     <div class="container">
-      <h2>Registriere dich und starte deine Fitness-Reise!</h2>
+      <h2>Melde dich jetzt an!</h2>
       <form action="/api/register" method="POST" class="registration-form">
         <div class="form-group">
           <label for="email">E-Mail:</label>
@@ -32,7 +30,7 @@
         <div>
           <p>Sie haben noch kein Konto? <a (click)="registration()">Hier eins erstellen</a></p>
         </div>
-        <button type="submit" class="cta-button">Jetzt anmelden</button>
+        <button (click)="login()" type="submit" class="cta-button">Jetzt anmelden</button>
       </form>
     </div>
   </section>
