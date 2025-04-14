@@ -7,7 +7,7 @@ import {Observable} from "rxjs";
 })
 export class UserService {
 
-  private apiUrl = 'https://your-backend-api.com/register'; // URL des Backends
+  private apiUrl = 'https://10.114.57.106/register'; // URL des Backends
 
   constructor(private http: HttpClient) { }
 
