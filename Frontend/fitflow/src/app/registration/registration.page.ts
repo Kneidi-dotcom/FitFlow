@@ -3,6 +3,8 @@ import {Router} from "@angular/router";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {UserService} from "../services/user.service";
 import {print} from "ionicons/icons";
+import {UserTrainingsplanService} from "../services/user-trainingsplan.service";
+import {catchError, map, throwError} from "rxjs";
 
 @Component({
   selector: 'app-registration',
@@ -13,7 +15,9 @@ export class RegistrationPage implements OnInit {
 
   registrationForm: any;
 
-  constructor(private router: Router, private fb: FormBuilder, private userService: UserService) {
+  userID: any;
+
+  constructor(private router: Router, private fb: FormBuilder, private userService: UserService, private userTrainingsPlanService: UserTrainingsplanService) {
 
     this.registrationForm = this.fb.group({
       username: ['', Validators.required],
@@ -30,22 +34,25 @@ export class RegistrationPage implements OnInit {
     this.router.navigate(['/login']);
   }
 
-  back(){
+  back() {
     this.router.navigate(['/home']);
   }
 
   onSubmit(): void {
-
+    var userId;
     if (this.registrationForm.valid) {
-      const userData = this.registrationForm.value; // User-Daten als JavaScript-Objekt
+      const userData = this.registrationForm.value;
+      const username = userData.username;
       this.userService.registerUser(userData).subscribe(
         response => {
-          console.log('User registered successfully:', response);
+          console.log('User registered successfully:', response.username);
         },
         error => {
           console.error('Registration failed:', error);
         }
       );
+
+      this.router.navigate(['/login']);
     } else {
       console.log('Form is invalid');
     }
@@ -53,5 +60,4 @@ export class RegistrationPage implements OnInit {
 
   ngOnInit() {
   }
-
 }

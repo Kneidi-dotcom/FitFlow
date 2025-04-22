@@ -5,6 +5,16 @@
   box-sizing: border-box;
 }
 
+h3{
+  display: inline;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+ul{
+  font-size: 15px;
+}
+
 .logoutButton{
   font-size: 30px;
   background-color: #1e1e1e;
@@ -208,7 +218,6 @@ html, body {
 .hero {
   background-color: white;
   padding: 60px 0;
-  text-align: center;
 }
 
 .hero h2 {

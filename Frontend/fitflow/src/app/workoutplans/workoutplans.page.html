@@ -17,7 +17,24 @@
 
 
   <section class="hero">
-    <h1>Deine Workoutpläne</h1>
+    <h1>Deine Trainingspläne</h1>
+
+    <div style="color: black; font-size: larger; text-align: left" *ngIf="plans">
+      <div *ngFor="let plan of plans">
+        {{ plan.name }}
+        <ul style="margin-left: 40px">
+          <li>Liegestütze:       3          |         8</li>
+          <li>Bankdrücken:       3          |         12</li>
+          <li>Bizepscurls:       3          |         12</li>
+          <li>Trizepsdrücken:    2          |         10</li>
+          <li>Trizepsheben:       2          |         10</li>
+          <li>Beinpresse:       4          |         12</li>
+          <li>Wadenheben:       3          |         12</li>
+          <li>Latziehen:       3          |         10</li>
+
+        </ul>
+      </div>
+    </div>
   </section>
 
   <footer>

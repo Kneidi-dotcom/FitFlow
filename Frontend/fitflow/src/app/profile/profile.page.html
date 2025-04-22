@@ -15,7 +15,29 @@
     </ion-toolbar>
   </ion-header>
 
-  <h1>Hallo *User*!</h1>
+  <div *ngIf="user">
+    <h1 style="font-size: 40px; text-align: center">Hallo {{ user.username }}!!!</h1>
 
+    <section class="hero">
+      <h2>Deine Infos:</h2>
 
+      <ul style="font-size: 26px; color: black">
+        <li><h3>Benutzername:</h3> {{ user?.username }}</li>
+        <li><h3>Geburtsdatum:</h3> {{ user?.birthdate.getDate() +"."+ (Number)(user?.birthdate.getUTCMonth()+1) +"."+ user?.birthdate.getFullYear()}}</li>
+        <li><h3>E-Mail:</h3> {{ user?.email }}</li>
+        <li><h3>Fortschrittsgrad:</h3> {{ user?.experience }}</li>
+        <li><h3>Größe:</h3> {{ user?.size }} cm</li>
+        <li><h3>Gewicht:</h3> {{ user?.bodyweight }} kg</li>
+      </ul>
+    </section>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p> Impressum </p>
+      <p>&copy; 2024 FitFlow. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
 </ion-content>
+
+
