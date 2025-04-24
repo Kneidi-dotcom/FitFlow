@@ -5,6 +5,7 @@ import {UserService} from "../services/user.service";
 import {print} from "ionicons/icons";
 import {UserTrainingsplanService} from "../services/user-trainingsplan.service";
 import {catchError, map, throwError} from "rxjs";
+import * as SHA256 from 'crypto-js/sha256';
 
 @Component({
   selector: 'app-registration',
@@ -42,6 +43,7 @@ export class RegistrationPage implements OnInit {
     var userId;
     if (this.registrationForm.valid) {
       const userData = this.registrationForm.value;
+      userData.password_hash = SHA256(userData.password_hash).toString();
       const username = userData.username;
       this.userService.registerUser(userData).subscribe(
         response => {

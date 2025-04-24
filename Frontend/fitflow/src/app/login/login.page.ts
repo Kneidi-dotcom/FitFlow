@@ -3,6 +3,7 @@ import {Router} from "@angular/router";
 import {UserService} from "../services/user.service";
 import {catchError, map, Observable, of} from "rxjs";
 import {UserTrainingsplanService} from "../services/user-trainingsplan.service";
+import * as SHA256 from 'crypto-js/sha256';
 
 @Component({
   selector: 'app-login',
@@ -29,9 +30,11 @@ export class LoginPage implements OnInit {
     const username = this.usernameInput.nativeElement.value;
     let password = this.passwordInput.nativeElement.value;
 
+    const password_hash = SHA256(password).toString();
+
     const credentials = {
       username: username,
-      password_hash: password
+      password_hash: password_hash
     };
 
     this.userService.loginUser(credentials).pipe(
